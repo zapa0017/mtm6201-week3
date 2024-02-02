@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="https://schema.org/WebPage"> 
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
 
 <head>
   <meta charset="UTF-8">
@@ -23,9 +23,9 @@
     </ul>
 
     <!-- header -->
-    <!-- adding aria role -->
-    <header class="site-header" role="banner" itemscope itemtype="https://schema.org/Organization">
-      <h1 role="heading">Jam Box Studios</h1>
+    <!-- adding aria-labelledby -->
+    <header class="site-header" itemscope itemtype="https://schema.org/Organization" aria-labelledby="site-heading">
+      <h1 id="site-heading">Jam Box Studios</h1>
 
       <!-- adding aria role -->
       <nav id="main-nav" role="navigation">
@@ -37,21 +37,21 @@
         </ul>
       </nav>
 
-      <!-- adding alt="" - and aria role  -->
-      <img src="https://placekitten.com/1200/900" class="banner" alt="kitten" role="img" itemprop="image">
+      <!-- adding alt="" - and aria role -->
+      <img src="https://placekitten.com/1200/900" class="banner" alt="kitten" aria-hidden="true" itemprop="image">
     </header>
     <!-- closing header -->
 
     <!-- main -->
     <!-- adding aria role -->
-    <main id="main-content" role="main" itemprop="maincontentofpage" >
-      <h2 role="heading">Welcome to Jam Box</h2>
+    <main id="main-content" role="main" itemprop="maincontentofpage">
+      <h2>Welcome to Jam Box</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
-      
+
       <!-- section -->
-      <!-- adding aria role -->
-      <section class="owner" role="ownersection" aria-labelledby="meet-owner-heading">
+      <!-- adding aria role to section -->
+      <section class="owner" role="region" aria-labelledby="meet-owner-heading">
         <h3 id="meet-owner-heading">Meet the owner</h3>
 
         <ul itemscope itemtype="https://schema.org/Person">
@@ -60,7 +60,7 @@
           <li itemprop="email">Email: johnjoe@jambox.ca</li>
           <li itemprop="telephone">Phone: 613-000-0000</li>
         </ul>
-        <h3 role="heading">Address</h3>
+        <h3>Address</h3>
         <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
           <span itemprop="streetAddress">Jambox Studios 123 Guitar Road,</span>
           <span itemprop="addressLocality">Musicville,</span>
@@ -68,17 +68,17 @@
           <span itemprop="postalCode">B3T 0L0</span>
         </p>
       </section>
-      
-      <!-- contact -->
-      <!-- adding aria role -->
-      <section class="contact-section" role="contact-info" aria-label="contact-information">
+
+      <!-- contact section -->
+      <!-- adding aria role to section-->
+      <section class="contact-section" aria-labelledby="contact-info">
         <h4 id="contact-info">Contact Us</h4>
 
         <!-- form -->
         <form action="thanks.html" itemprop="potentialaction" itemscope itemtype="http://schema.org/communicateaction">
 
           <label for="fullname">Full Name</label>
-          <input type="text" id="fullname" name="fullname" placeholder="Full Name"> 
+          <input type="text" id="fullname" name="fullname" placeholder="Full Name">
 
           <label for="email">Email</label>
           <input type="text" id="email" name="email" placeholder="Email">
@@ -89,8 +89,6 @@
           <label for="message"><b>Your Message</b></label>
           <textarea id="message" name="message" placeholder="Your Message"></textarea>
 
-          
-       
           <button type="submit" aria-label="SubmitForm">Send</button>
         </form>
         <!-- closing form -->
@@ -99,6 +97,7 @@
     </main>
 
     <!-- footer -->
+    <!-- adding aria role to footer-->
     <footer class="site-footer" role="contentinfo">
       &copy; 2021 Jam Box Studios <a href="#top">Back to Top</a></footer>
     <!-- closing footer -->
