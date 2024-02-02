@@ -67,6 +67,7 @@ img {
 
 #main-nav ul li a:hover{
   text-decoration: underline;
+  color: red;
 }
 
 form input,
@@ -93,11 +94,11 @@ form button {
 }
 
 form button:hover {
-  background: darkgray; 
+  background: red; 
 }
 
 form button:active {
-  background: lightgray; 
+  background: red; 
 }
 
 
